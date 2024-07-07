@@ -1,0 +1,279 @@
+.scroll-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle_container {
+  width: 80%;
+  height: auto;
+}
+.middle_container h1 {
+  /* Adjust the width to fit the content */
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Aeonik";
+  line-height: 72px;
+
+  color: white;
+}
+.middle_container h1 span {
+  color: #ffffff80;
+}
+.middle_container p {
+  font-size: 18px;
+  color: #00fd54;
+  font-weight: 400;
+  font-family: "Aeonik";
+  line-height: 21.6px;
+}
+/* second section */
+
+.second_section_container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_section_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://s3-alpha-sig.figma.com/img/33bc/64ba/6dbc3c59d8ad718f7580a5ebea352df1?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SfcJr5A4aP9V4MKYC-oEHe5XsKhrEd3ZSOr5UJJprlPWpmgZjBblIi2bQxkTAtFRHC5Bid5qQtBWRlxr5DUjzELedCcjXLY~gQnSppCbvENOYFDGHjmWHR88QX0na9xyfg8LdISedodbYmxO15S78xtxwNhppOkrl1xqqv4kzYSTMqVpfYcT7uM2wLbfxuZ8qS99ipb0iNf6al2WVTpvVJIJA5AMkcxj5bkp5iMu1vZG2gr0f7ygCPjHk8OawnOk2Hn4cOJymjlUxa6SRBNfRAorxD5gtBK9stRMeb5V-FfcmKixJ7XbCu0mA2Jb6MsXvTJH0Ug72x-6bp-BcTGPvw__");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.second_section_container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.centerd_div {
+  width: 80%;
+  height: 100%;
+  border: 1px solid #fcfcfa1a;
+  border-top: none;
+  border-bottom: none;
+}
+.text-containre {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text_p {
+  width: 25%;
+}
+.text-containre h1 {
+  font-size: 44px;
+  font-family: "Aeonik";
+  color: white;
+}
+.text_p p {
+  text-align: start;
+  color: white;
+  font-family: "Aeonik";
+}
+.main_container {
+  width: 100%;
+  height: 84vh;
+  display: flex;
+}
+.first_section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #fcfcfa1a;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+}
+
+.container_first {
+  width: 90%;
+  height: auto;
+  background: #ffffff08;
+
+  border-radius: 10px;
+  padding: 0.625rem;
+}
+.bulb_icon {
+  font-size: 40px;
+  color: white;
+}
+.icon_container_text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon_container_text h1 {
+  font-family: "Aeonik";
+}
+.container_first {
+  color: white;
+  font-family: "Aeonik";
+}
+
+.container_second {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #fcfcfa1a;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.bottom-border {
+  border-bottom: 1px solid #fcfcfa1a;
+}
+.container_second img {
+  width: 35px;
+  height: 35px;
+}
+.container_second p {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Aeonik";
+  color: white;
+}
+
+.second_section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spline_assets {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iframe {
+  width: 500px;
+  height: 500px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .middle_container {
+    width: 95%;
+    height: auto;
+  }
+  .middle_container h1 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Aeonik";
+    line-height: 42px;
+
+    color: white;
+  }
+
+  /* second */
+  .text-containre {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .text_p {
+    width: 90%;
+  }
+
+  .main_container {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first_section {
+    width: 95%;
+    height: 100%;
+    border: none;
+  }
+
+  
+  .second_section_container {
+    width: 100%;
+    height: auto;
+   
+  }
+  
+  .spline_assets {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iframe {
+    width: 400px;
+    height: 400px;
+  }
+  .second_section {
+    width: 100%;
+    height: 100%;
+   
+  }
+  .centerd_div {
+    width: 95%;
+    height: 100%;
+   
+  }
+  .scroll-container {
+    width: 100%;
+    height: 70vh;
+   
+  }
+  .text-containre h1 {
+    font-size: 32px;
+    font-family: "Aeonik";
+    color: white;
+  }
+  .container_second img {
+    width: 25px;
+    height: 25px;
+  }
+  .container_second p {
+    font-size: 25px;
+   
+  }
+  .bulb_icon {
+    font-size: 20px;
+    color: white;
+  }
+  .icon_container_text h1 {
+    font-family: "Aeonik";
+    font-size: 30px;
+  }
+  .spline_assets{
+    overflow: hidden;
+  }
+}
+
